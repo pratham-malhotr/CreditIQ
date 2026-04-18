@@ -8,7 +8,7 @@ import getpass
 
 # ─── Groq API Key ─────────────────────────────────────────────────────────
 if "GROQ_API_KEY" not in os.environ:
-    os.environ["GROQ_API_KEY"] = None
+    os.environ["GROQ_API_KEY"] = ""
 print("Groq API key: SET ✅")
 
 # ─── Model Path ───────────────────────────────────────────────────────────
