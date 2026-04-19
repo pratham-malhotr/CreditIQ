@@ -11,7 +11,6 @@ if "GROQ_API_KEY" not in os.environ:
     os.environ["GROQ_API_KEY"] = ""
 print("Groq API key: SET ✅")
 
-# ─── Model Path ───────────────────────────────────────────────────────────
 # Upload dt_model.pkl via the Files panel (📁) or adjust the path below.
 os.environ["DT_MODEL_PATH"] = "dt_model.pkl"   # ← update if needed
 print(f"Model path  : {os.environ['DT_MODEL_PATH']} ✅")
@@ -52,7 +51,7 @@ GROQ_MODEL_FAST   = "llama-3.1-8b-instant"
 
 # Path to the pickled Decision Tree model package.
 # Override at runtime by setting the DT_MODEL_PATH environment variable.
-MODEL_PATH = os.getenv("DT_MODEL_PATH", "dt_model_streamlit.pkl")
+MODEL_PATH = os.getenv("DT_MODEL_PATH", "dt_model.pkl")
 
 # Hard cap on how many tool-calling iterations the Executor may make per run.
 # Prevents infinite loops if the LLM keeps calling tools without terminating.

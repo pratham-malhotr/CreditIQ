@@ -115,8 +115,7 @@ The Agent controls a specialized **Tool Registry** to perform deep diagnostics:
 
 - `app.py`: Streamlit frontend, state management, and plotting logic.
 - `agent_pipeline.py`: The "Brain" of the system. Contains the PER logic, tool registry, and RAG configuration.
-- `dt_model_streamlit.pkl`: The current production ML model and preprocessing artifact.
-- `export_streamlit_model.py`: Script to package new models for production.
+- `dt_model.pkl`: The current production ML model and preprocessing artifact.
 - `requirements.txt`: Environment dependencies.
 - `.streamlit/secrets.toml`: Local storage for the `GROQ_API_KEY`.
 
